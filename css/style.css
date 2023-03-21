@@ -1,0 +1,999 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.body{
+    background-color: rgb(217, 208, 208);
+}
+a {
+    color: black;
+}
+
+/* Menu Principal */
+.logo {
+    height: 60px;
+    position: relative;
+    float: left;
+}
+img{
+    max-width: 100%;
+}
+.mani-menu__link{
+    color: black;
+    text-transform: uppercase;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: #671919ec;
+    z-index: 50;
+}
+nav {
+    top: -20px;
+    position: absolute;
+    left: 0px;
+    right: -15%;
+    margin: 20px auto;
+    width: 80%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav>ul {
+    display: table;
+    width: 100%;
+    background-color: #671919ec;
+    position: relative;
+}
+
+nav>ul li {
+    display: table-cell;
+}
+
+nav>ul>li>ul {
+    display: block;
+    position: absolute;
+    background-color: black;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    height: 0%;
+    transition: all .3s ease;
+}
+
+nav>ul li a {
+    color: white;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+nav>ul>li a span {
+    background-color: #671919ec;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -60px;
+    transition: all .3s ease;
+    line-height: 60px;
+}
+
+nav>ul>li>a:hover>span {
+    top: 0px;
+}
+
+/* Primer apartado index */
+.primer {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-image: url(/img/banner1.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.txt1 {
+    position: relative;
+    top: 40%;
+    padding-left: 60%;
+    width: 350px;
+
+}
+
+.txt1 p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+    size: 200px;
+}
+
+.txt1 h1 {
+    text-align: left;
+    size: 200px;
+}
+
+.txt1 .subs {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 20px;
+}
+
+.txt1 .subs:hover {
+    transition: 0.2s;
+    box-shadow: 0px 3px 3px 1px rgb(130, 130, 130);
+}
+
+.txt1 .info {
+    border: 2px solid red;
+    color: red;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.txt1 .info:hover {
+    transition: 0.2s;
+    box-shadow: 0px 3px 3px 1px rgb(130, 130, 130);
+}
+
+/* Presentacion 2 ultimos cursos añadidos */
+.ultimos {
+    position: relative;
+    top: 60px;
+    display: flex;
+    width: 100%;
+    height: 520px;
+}
+
+.ultimos h1 {
+    position: absolute;
+    padding-left: 40%;
+    color: #671919ec;
+}
+
+/* Curso 1  */
+
+.ultimos .curs1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+}
+
+.ultimos .curs1:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs1 img {
+    width: 300px;
+    height: 150px;
+}
+
+.curs1 h4 {
+    padding-bottom: 30px;
+}
+
+.curs1 span {
+    padding: 40px;
+}
+
+
+/* Curso 2 */
+.ultimos .curs2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+}
+
+.ultimos .curs2:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs2 img {
+    width: 300px;
+    height: 150px;
+}
+
+.curs2 h4 {
+    padding-bottom: 30px;
+}
+
+.curs2 span {
+    padding: 40px;
+}
+
+/* Curso 3 */
+.ultimos .curs3 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+}
+
+.ultimos .curs3:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs3 img {
+    width: 300px;
+    height: 150px;
+}
+
+.curs3 h4 {
+    padding-bottom: 50px;
+}
+
+.curs3 span {
+    padding: 30px;
+}
+
+/* Presentacion 3 Mejores cursos */
+.mejores {
+    position: relative;
+    top: 60px;
+    display: flex;
+    width: 100%;
+    height: 900px;
+
+}
+
+.mejores h1 {
+    position: absolute;
+    padding-left: 40%;
+    color: #671919ec;
+}
+
+/* Curso 4 */
+.mejores .curs4 {
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    margin-left: 27%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.5s;
+}
+
+.mejores .curs4:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs4 td {
+    width: 60%;
+    height: 60%;
+}
+
+.curs4 h3 {
+    padding: 20px;
+}
+
+.curs4 h5 {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.curs4 span {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.curs4 img {
+    width: 100%;
+    height: 296px;
+
+}
+
+/* Curso 5 */
+.mejores .curs5 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 450px;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+}
+
+.mejores .curs5:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs5 img {
+    width: 300px;
+    height: 150px;
+}
+
+.curs5 h4 {
+    padding-bottom: 50px;
+}
+
+.curs5 span {
+    padding: 20px;
+}
+
+/* Curso 6 */
+.mejores .curs6 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 450px;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+}
+
+.mejores .curs6:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs6 img {
+    width: 300px;
+    height: 150px;
+}
+
+.curs6 h4 {
+    padding-bottom: 30px;
+}
+
+.curs6 span {
+    padding: 30px;
+}
+
+/* Curso 7 */
+.mejores .curs7 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 450px;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+}
+
+.mejores .curs7:hover {
+    transform: translate(0, -10px);
+    transition: 0.2s;
+    box-shadow: 0px 5px 5px 1px rgb(130, 130, 130);
+}
+
+.curs7 img {
+    width: 300px;
+    height: 150px;
+}
+
+.curs7 h4 {
+    padding-bottom: 55px;
+}
+
+.curs7 span {
+    padding: 50px;
+}
+
+/* Presentacion 4 Catidad de alumnos */
+.alumnos {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    background-color: #8b1f1fec;
+    color: white;
+
+}
+
+.alumnos h4 {
+    font-size: 20px;
+}
+
+.alumnos h2 {
+    font-size: 40px;
+}
+
+.alumnos span {
+    margin: auto;
+}
+
+/* Presentacion 5 Precios */
+#precios {
+    position: relative;
+    top: 80px;
+    display: flex;
+    width: 100%;
+    height: 520px;
+}
+
+#precios h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    position: absolute;
+    padding-left: 30%;
+    color: #671919ec;
+
+}
+
+#precios h3 {
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    padding-left: 40%;
+
+}
+
+#precios .prec1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+    background-color: rgb(230, 229, 229);
+}
+
+#precios .prec1 .mes0 {
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+#precios .prec1 .din0 {
+    padding: 10px;
+    font-size: 30px;
+    color: #671919ec;
+
+}
+
+#precios .prec1 .tt0 {
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+#precios .prec1 .subs0{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 20px;
+    transition: 0.2s;
+}
+#precios .prec1 .subs0:hover {
+    transition: 0.2s;
+    box-shadow: 0px 3px 3px 1px rgb(130, 130, 130);
+}
+#precios .prec2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+    background-color: rgb(230, 229, 229);
+}
+#precios .prec2 .mes1 {
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+#precios .prec2 .din1 {
+    padding: 10px;
+    font-size: 30px;
+    color: #671919ec;
+
+}
+
+#precios .prec2 .tt1 {
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+#precios .prec2 .subs1{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 20px;
+    transition: 0.2s;
+}
+#precios .prec2 .subs1:hover {
+    transition: 0.2s;
+    box-shadow: 0px 3px 3px 1px rgb(130, 130, 130);
+}
+
+#precios .prec3 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    transform: translate(0, 0px);
+    transition: 0.2s;
+    background-color: rgb(230, 229, 229);
+}
+#precios .prec3 .mes2 {
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+#precios .prec3 .din2 {
+    padding: 10px;
+    font-size: 30px;
+    color: #671919ec;
+
+}
+
+#precios .prec3 .tt2 {
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+#precios .prec3 .subs2{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 20px;
+    transition: 0.2s;
+}
+#precios .prec3 .subs2:hover {
+    transition: 0.2s;
+    box-shadow: 0px 3px 3px 1px rgb(130, 130, 130);
+}
+
+
+/* footer de pagina */
+footer{
+    background-color: red;
+    margin-top: auto;
+    display: flex;
+    
+}
+footer>div span{
+    padding: 5%;
+}
+.footdiv{
+    position: relative;
+    display: inline-block;
+    width: 17%;
+    height: 200%;
+    padding: 30px 0;
+    border: solid 2px #671919ec;
+}
+
+
+
+
+
+
+/* Pagina de los login y registro */
+.bodylogin {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(/img/favicon.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    width: 98%;
+    padding: 15px;
+}
+
+.formulario {
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+.formh1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.button:hover {
+    background: cadetblue;
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+.log {
+    color: white;
+}
+
+/*Quienes somos*/
+.bodyquienes {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(/img/favicon.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.quienes {
+    width: 98%;
+    margin: 20px;
+    height: auto;
+    position: absolute;
+}
+
+.imgquien {
+    width: 80%;
+    height: auto;
+}
+
+.divquien {
+    width: 45%;
+    display: flex;
+    margin-top: 15px;
+    height: 300px;
+    position: relative;
+}
+
+.letras {
+    position: absolute;
+    display: inline-block;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+.divquien span {
+    font-weight: 600;
+    padding-inline-start: 5%;
+    font-size: large;
+}
+
+/* COMING SOON */
+.coming{
+    padding-top: 300px;
+}
+
+/* Roturas */
+@media screen and (min-width:576px) {
+    .formulario {
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+    .main-menu{
+        flex-direction: row;
+        transform: translateY(0);
+    }
+    .toggle-menu{
+        display: none;
+    }
+    .toggle-menu__checkbox{
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) 
+{
+    .divquien{
+        width: 70%;
+        text-align: center;
+        margin-top: 1%;
+        display: inline-block;
+        position: relative;
+    }
+    .letras{
+        position: relative;
+        display: inline-block;
+        text-align: justify;
+        padding-top: 0;
+    }
+    .spanmenu{
+        display: none;
+    }
+    .main-menu{
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #671919ec;
+        transition: ease 0.3s;
+        transform: translateY(-100%);
+    }
+    .main-menu__item{
+        padding: 1rem;
+    }
+    .toggle-menu{
+        width: 40px;
+        position: absolute;
+        left: 90%;
+        top: 1rem;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .toggle-menu__checkbox:checked + .main-menu{
+        transform: translateY(0);
+    }
+    .toggle-menu__checkbox{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1100px) 
+{
+    .main
+    nav {
+        display: block;
+      }
+      
+
+     /* Presentacion 1  */
+    .primer{
+        background-position: 30% ;
+        background-size: 200%;
+    }
+     /* presentacion 2 ultimos cursos */
+    .ultimos{
+        display: inline;
+
+    }
+    .ultimos .curs1{
+        top: 80px;
+        position: relative;
+    }
+    .ultimos .curs2{
+        top: 80px;
+        position: relative;
+    }
+    .ultimos .curs3{
+        top: 80px;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    /* presentacion 3 mejores cursos */
+    .mejores{
+        display: none;
+    }
+
+    /* precios */
+
+    #precios{
+      display: inline-block;
+      height: 1200px;
+    }
+    #precios h2{
+        padding-left: 15%;
+    }
+    #precios h3{
+        top: 80px;
+        padding-left: 25%;
+    }
+    #precios .prec1{
+       position: relative;
+       top: 150px;
+    }
+    #precios .prec2{
+        position: relative;
+        top: 150px;
+     }
+     #precios .prec3{
+        position: relative;
+        top: 150px;
+     }
+    .primer {
+        position: relative;
+        width: 100%;
+        height: 550px;
+    }
+    .divquien span {
+        font-weight: 600;
+        padding-inline-start: 5%;
+        font-size: medium;
+    }
+    .divquien{
+        width: 70%;
+        margin-top: 1%;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
+    .letras{
+        position: relative;
+        display: inline-block;
+        text-align: justify;
+        padding-top: 0;
+    }
+
+
+    
+}
+@media screen and (max-width:800px) {
+    /* presentacion 1 */
+    .primer{
+        background-position: 25% ;
+        background-size: 300%;
+        
+    }
+    .primer .txt1 {
+        padding-left: 30%;
+        padding-top: 380px;
+        
+    }
+     /* presentacion 2 ultimos cursos */
+   
+    .ultimos{
+        display: inline;
+        top: 250px;
+    }
+    .ultimos .curs1{
+        top: 80px;
+        position: relative;
+    }
+    .ultimos .curs2{
+        top: 80px;
+        position: relative;
+    }
+    .ultimos .curs3{
+        top: 80px;
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    /* Presentacion 4 alumnos */
+    .alumnos{
+        top: 350px;
+    }
+    /* precios */
+    #precios{
+      display: inline-block;
+      height: 1200px;
+      top: 400px;
+    
+    }
+    #precios h2{
+        padding-left: 10%;
+        
+    }
+    #precios h3{
+        top: 100px;
+        padding-left: 20%;
+        padding-right: 100px;
+    }
+    #precios .prec1{
+       position: relative;
+       top: 200px;
+    }
+    #precios .prec2{
+        position: relative;
+        top: 150px;
+     }
+     #precios .prec3{
+        position: relative;
+        top: 150px;
+     }
+    footer{
+        margin-top: 300px;
+    }
+}
